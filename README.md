@@ -2,7 +2,7 @@
 
 A dynamic array library in C. Similar to std::vector.
 
-## Example code
+## Example code (dosen't use all features, see header file)
 
 ```
 //an array of values to initialize the vector with  
