@@ -22,8 +22,16 @@ vec_delete_buff(vec, 1, 2);
 vec_delete(vec, 1);  
 //insert in the vector with vec_insert, same logic again  
 vec_insert(vec, &y, 3);  
-vec_insert_buff(vec, &x, 2, 3);`  
+vec_insert_buff(vec, &x, 2, 3);
+//don't check the definition of the macro vec_at and you'll be fine
+printf("%d\n", vec_at(vec, int, 2));
   
 //once youre done call vec_free  
 vec_free(vec);
 ```
+
+## DO NOT
+- Use pop_back or pop_buff on a vector of size 1, use vec_free;
+- Use delete or delete_buff to remove the last element, use pop_back;
+- Give length of 0 to either vec_init or vec_new;
+- Pass in a NULL pointer anywhere;
