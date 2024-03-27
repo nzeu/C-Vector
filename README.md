@@ -4,7 +4,8 @@ A dynamic array library in C. Similar to std::vector.
 
 ## Example code
 
-`//an array of values to initialize the vector with  
+```
+//an array of values to initialize the vector with  
 int *x = {4, 5, 6};  
 int *z = {46, 343, 345, 334, 666, 9987, 776};  
 int y = 45;  
@@ -23,5 +24,6 @@ vec_delete(vec, 1);
 vec_insert(vec, &y, 3);  
 vec_insert_buff(vec, &x, 2, 3);`  
   
-`//once youre done call vec_free  
-vec_free(vec);`  
+//once youre done call vec_free  
+vec_free(vec);
+```
